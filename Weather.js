@@ -17,7 +17,7 @@ export default function Weather({ temp, condition }) {
             <StatusBar barStyle="light-content" />
             <View style={styles.halfContainer}>
                 <MaterialCommunityIcons
-                    size={96}
+                    size={90}
                     name={weatherOptions[condition].iconName}
                     color="white"
                 />
@@ -36,12 +36,10 @@ Weather.PropTypes = {
         'Rain',
         'Snow',
         'Atmosphere',
-        'Clear',
-        'Clouds',
         'Haze',
         'Mist',
         'Dust',
-        'test',
+        'testoo',
     ]).isRequired,
 };
 
@@ -50,6 +48,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: 'orange',
     },
     temp: {
         fontSize: 42,
