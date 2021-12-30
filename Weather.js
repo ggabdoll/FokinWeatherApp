@@ -32,14 +32,12 @@ Weather.PropTypes = {
     temp: PropTypes.number.isRequired,
     condition: PropTypes.oneOf([
         'Thunderstorm',
-        'Drizzle',
-        'Rain',
-        'Snow',
         'Atmosphere',
         'Haze',
-        'Mist',
+        'Mists',
         'Dust',
         'testoo',
+        'thunder',
     ]).isRequired,
 };
 
