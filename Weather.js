@@ -33,9 +33,9 @@ Weather.PropTypes = {
     condition: PropTypes.oneOf([
         'Thunderstorm',
         'Drizzle',
-        'Rain',
+        'Rainism',
         'Snow',
-        'Atmosphere',
+        'Atmospher',
         'Haze',
         'Mist',
         'Dust',
@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'orange',
+        backgroundColor: 'pink',
+        color: 'yellow',
     },
     temp: {
         fontSize: 42,
