@@ -21,7 +21,7 @@ export default function Weather({ temp, condition }) {
                     name={weatherOptions[condition].iconName}
                     color="white"
                 />
-                <Text style={styles.temp}>{temp}o</Text>
+                <Text style={styles.temp}>{temp}오호라과장님</Text>
             </View>
             <View style={styles.halfContainer} />
         </LinearGradient>
@@ -36,6 +36,7 @@ Weather.PropTypes = {
         'Haze',
         'Mists',
         'Dust',
+        '촤라락',
         'testoo',
         'thunder',
     ]).isRequired,
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'blue',
         color: 'yellow',
-        fontSize: 20,
+        fontSize: 10,
     },
     temp: {
         fontSize: 42,
