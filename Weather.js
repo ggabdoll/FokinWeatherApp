@@ -21,7 +21,7 @@ export default function Weather({ temp, condition }) {
                     name={weatherOptions[condition].iconName}
                     color="white"
                 />
-                <Text style={styles.temp}>{temp}o</Text>
+                <Text style={styles.temp}>{temp}오호호호라</Text>
             </View>
             <View style={styles.halfContainer} />
         </LinearGradient>
@@ -30,15 +30,8 @@ export default function Weather({ temp, condition }) {
 
 Weather.PropTypes = {
     temp: PropTypes.number.isRequired,
-    condition: PropTypes.oneOf([
-        'Thunderstorm',
-        'Atmosphere',
-        'Haze',
-        'Mists',
-        'Dust',
-        'testoo',
-        'thunder',
-    ]).isRequired,
+    condition: PropTypes.oneOf(['Thunderstorm', 'Atmosphere', 'Dust', 'testoo', 'thunder'])
+        .isRequired,
 };
 
 const styles = StyleSheet.create({
